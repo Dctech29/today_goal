@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #48A30012;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 100px;
+}
+
+.title {
+    font-weight: 700;
+    color: #48a300;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.title span {
+    color: #61481c;
+}
+
+.app-container {
+    background-color: #FBFBFB;
+    margin-inline: auto;
+    max-width: 660px;
+    border-radius: 15px;
+    padding: 15px 40px;
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.heading img {
+    vertical-align: middle;
+    margin-left: 15px;
+    width: 40px;
+}
+
+.subheading {
+    font-size: 14px;
+    font-family: 400;
+    color: #858585;
+}
+
+.progress-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cleargoals {
+    height: 30px;
+    background-color: #a30000;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 20px;
+    font-family: inherit;
+    line-height: 1;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+}
+
+.cleargoals:active {
+    background-color: #ff4848;
+}
+
+.progress-bar {
+    background-color: #48A3001A;
+    height: 30px;
+    border-radius: 15px;
+    width: 100%;
+    /* overflow: hidden; */
+    transition: all .5s ease-in-out;
+}
+
+.progress {
+    transition: all .5s ease-in-out;
+    max-width: calc(33.33%*0);
+    height: 100%;
+    border-radius: 15px;
+    background-color: #48a300;
+    font-size: 10px;
+    color: #EEFFE0;
+    display: flex;
+    align-items: center;
+}
+
+.progress p {
+    margin-left: 20px;
+}
+
+.warning {
+    color: red;
+    font-size: 14px;
+    line-height: 0;
+    margin-top: 25px;
+}
+
+.warning p {
+    visibility: hidden;
+}
+
+.input {
+    background-color: white;
+    width: 100%;
+    border: 1px solid #0000001A;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 30px 0px;
+}
+
+.checkbox {
+    min-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #61481C4D;
+    margin-left: 20px;
+    overflow: hidden;
+    user-select: none;
+    cursor: pointer;
+}
+
+.tickmark {
+    display: none;
+}
+
+.checked {
+    border-color: #48A300;
+    background-color: #48A300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checked .tickmark {
+    display: block;
+}
+
+.checked+input {
+    color: #48A300;
+    text-decoration-line: line-through;
+    text-decoration-color: #48A300;
+}
+
+.input input {
+    flex-grow: 1;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    height: 82px;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.input input:disabled {
+    background-color: white;
+}
+
+.input input::placeholder {
+    color: #D9D9D9;
+}
+
+.quote {
+    font-size: 16px;
+    text-align: center;
+}
+
+.credit {
+    line-height: 40px;
+    color: #858585;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .title {
+        font-size: 2rem;
+    }
+    .app-container {
+        margin: 0 20px;
+    }
+    .heading {
+        font-size: 24px;
+    }
+    .heading img {
+        width: 34px;
+    }
+}
